@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Compilar React
-    run: npm run build -- --base=./
+  run: npm run build -- --base=./
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
